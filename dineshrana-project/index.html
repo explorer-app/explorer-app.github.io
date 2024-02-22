@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- It is a Awasome Font Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            /* Background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            /* Green header color */
+            color: #ffffff;
+            /* Header text color */
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .developer-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .developer-image {
+            border-radius: 50%;
+            max-width: 100px;
+            margin: 0 auto 15px;
+            display: block;
+        }
+
+        .developer-name {
+            font-size: 1.5em;
+            color: #4CAF50;
+            /* Green text color */
+        }
+
+        .developer-description {
+            margin-top: 10px;
+            color: #555555;
+        }
+
+        /* Add responsive styles as needed */
+
+        @media (min-width: 768px) {
+            .developer-card {
+                width: 50%;
+            }
+        }
+
+        .social {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+        }
+
+        .social a {
+            text-decoration: none;
+            color: green;
+            font-size: larger;
+            border-radius: 50%;
+            transition: all 0.5 ease-in-out;
+            padding: 5px 10px;
+        }
+
+        .social a:hover {
+            background-color: green;
+            color: white;
+        }
+    </style>
+    <title>Dinesh rana developers</title>
+</head>
+
+<body>
+    <header>
+        <h1>Meet Our Developers</h1>
+    </header>
+    <div class="container">
+        <div class="developer-card">
+            <img class="developer-image" src="https://mearjuntripathi.github.io/image/arjun.png" alt="Developer 1">
+            <h2 class="developer-name">Arjun Tripathi</h2>
+            <p class="developer-description">A full stack developer</p>
+            <div class="social">
+                <a href=""><i class="fa fa-twitter"></i> </a>
+                <a href="https://www.github.com/mearjuntripathi/"><i class="fa fa-github"></i> </a>
+                <a href="https://www.linkedin.com/in/mearjuntripathi/"><i class="fa fa-linkedin"></i> </a>
+            </div>
+        </div>
+
+        <div class="developer-card">
+            <img class="developer-image"
+                src="https://media.licdn.com/dms/image/D4D03AQEQE8Nxf33sPA/profile-displayphoto-shrink_800_800/0/1698986445512?e=1714003200&v=beta&t=lJpuAhIBaj7vYzZclqkPcPgznezbEH2gdZBZ8k5-pc0"
+                alt="Developer 2">
+            <h2 class="developer-name">Rahul Durgapal</h2>
+            <p class="developer-description">Backend developer</p>
+            <div class="social">
+                <a href=""><i class="fa fa-facebook"></i> </a>
+                <a href="https://www.github.com/rahuldurgapal/"><i class="fa fa-github"></i> </a>
+                <a href="https://www.linkedin.com/in/rahuldurgapal/"><i class="fa fa-linkedin"></i> </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add more developer cards as needed -->
+
+</body>
+
+</html>

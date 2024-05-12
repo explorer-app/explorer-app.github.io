@@ -1,0 +1,33 @@
+.fixed{
+    position: fixed;
+}
+
+/* Font Sizes */
+.font-xs {
+    font-size: 12px;
+}
+
+.font-sm {
+    font-size: 14px;
+}
+
+.font-md {
+    font-size: 16px;
+}
+
+.font-lg {
+    font-size: 18px;
+}
+
+.font-xl {
+    font-size: 20px;
+}
+
+/* Font Weights */
+.font-bold {
+    font-weight: bold;
+}
+
+.font-light {
+    font-weight: lighter;
+}

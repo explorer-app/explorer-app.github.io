@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+
+:root {
+    --header-bg-color: rgb(107, 15, 213);
+    --home-color: rgb(107, 15, 213);
+    --active-text-color: rgb(255, 255, 255);
+    --text-color: rgb(207, 225, 228);
+}
+
+/* For WebKit based browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-width: thin;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    z-index: 945;
+    background-color: var(--header-bg-color);
+    -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+}
+
+header.down {
+    --header-bg-color: rgb(58, 39, 227);
+    backdrop-filter: blur(5px);
+}
+
+.nav-link{
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-link li{
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link li:hover{
+    color: var(--active-text-color);
+    text-decoration: underline;
+}
+
+#bars{
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.home-section {
+    background-color: var(--home-color);
+}
+
+.btn{
+    padding: 5px 10px;
+    color: var(--text-color);
+    border-radius: 5px;
+    border: 3px solid;
+    background: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover{
+    color: var(--active-text-color);
+}

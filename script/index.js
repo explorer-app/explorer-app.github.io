@@ -6,3 +6,9 @@ window.addEventListener('scroll', function () {
         header.classList.remove('down');
     }
 });
+
+function showNav(){
+    console.log('hi');
+    let nav = document.querySelector('.nav-link');
+    nav.classList.toggle('showNav');
+}

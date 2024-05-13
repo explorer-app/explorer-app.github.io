@@ -2,6 +2,14 @@
     position: fixed;
 }
 
+.hide {
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
 /* Font Sizes */
 .font-xs {
     font-size: 12px;

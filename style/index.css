@@ -2,8 +2,10 @@
 
 
 :root {
-    --header-bg-color: rgb(107, 15, 213);
-    --home-color: rgb(107, 15, 213);
+    --header-bg-color: rgb(255, 255, 255);
+    --home-color: rgb(255, 255, 255);
+    --primary-color: rgb(255, 136, 0);
+    --active-color: blue;
     --active-text-color: rgb(255, 255, 255);
     --text-color: rgb(207, 225, 228);
 }
@@ -26,7 +28,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 50px;
+    padding: 25px 10px;
     z-index: 945;
     background-color: var(--header-bg-color);
     -webkit-transition: all ease-out .5s;
@@ -36,12 +38,12 @@ header {
 }
 
 header.down {
-    --header-bg-color: rgb(58, 39, 227);
+    background: none;
     backdrop-filter: blur(5px);
 }
 
 .nav-link{
-    color: var(--text-color);
+    color: var(--primary-color);
     display: flex;
     align-items: center;
     gap: 20px;
@@ -55,10 +57,11 @@ header.down {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+    user-select: none;
 }
 
 .nav-link li:hover{
-    color: var(--active-text-color);
+    color: var(--active-color);
     text-decoration: underline;
 }
 
@@ -77,7 +80,7 @@ section {
 
 .btn{
     padding: 5px 10px;
-    color: var(--text-color);
+    color: var(--primary-color);
     border-radius: 5px;
     border: 3px solid;
     background: none;
@@ -85,5 +88,31 @@ section {
 }
 
 .btn:hover{
-    color: var(--active-text-color);
+    color: var(--active-color);
+}
+
+
+@media (max-width: 1000px) {
+    #bars {
+        display: block;
+    }
+
+    .nav-link {
+        position: absolute;
+        padding: 10px;
+        width: 100%;
+        background-color: var(--header-bg-color);
+        flex-direction: column;
+        top: 80px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.5s linear;
+        transform: translateY(-100%);
+    }
+
+    .showNav {
+        opacity: 1;
+        pointer-events: auto; /* re-enable interaction */
+        transform: translateY(0%);
+    }
 }

@@ -21,6 +21,7 @@
     box-sizing: border-box;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     scrollbar-width: thin;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -69,6 +70,13 @@ header.down {
     display: none;
 }
 
+#make_top{
+    position: fixed;
+    z-index: 99;
+    bottom: 20px;
+    right: 20px;
+}
+
 section {
     padding-top: 100px;
     min-height: 100vh;
@@ -93,6 +101,13 @@ section {
 }
 
 
+footer{
+    bottom: 0;
+    min-height: 30vh;
+    width: 100%;
+}
+
+
 @media (max-width: 1000px) {
     #bars {
         display: block;
@@ -102,6 +117,9 @@ section {
         position: absolute;
         padding: 10px;
         width: 100%;
+        border-radius: 10px;
+        border: 3px solid ;
+        right: 0;
         background-color: var(--header-bg-color);
         flex-direction: column;
         top: 80px;

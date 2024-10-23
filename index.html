@@ -1,60 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/conmponent.css">
-    <link rel="icon" href="./images/explorer.png">
-    <script src="./script/index.js"></script>
-    <!-- It is a Awasome Font Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>explorer</title>
+    <title>Explorer | Home</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-
-    <!-- Header of project -->
-    <header class="fixed">
-        <a href=""><img src="./images/explorer.png" width="150px"></a>
-        <button class="btn" id="bars"><i class="fa fa-bars font-lg font-bold" onclick="showNav()"></i></button>
-        <ul class="nav-link font-lg">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Why Us</li>
-            <li>Books</li>
-            <li>Our Service</li>
-            <li>Contact</li>
-            <li><button class="btn font-lg font-bold">Suport US</button></li>
-        </ul>
+    <header class="navbar">
+        <a href="index.html" class="logo"><img src="./images/explorer.png" alt=""></a>
+        <button class="nav-toggle" id="nav-toggle">&#9776;</button> <!-- Hamburger Icon -->
+        <nav class="nav-links" id="nav-links">
+            <a href="developers.html">Developers</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <button class="btn hide font-lg" id="make_top" onclick="window.scrollTo({top: 0});"><i class="fa fa-arrow-up"></i></button>
+    <main class="minimal-hero">
+        <h1 id="greeting" class="typing"></h1>
+    </main>
 
-    <!-- Home Section -->
-    <section class="home-section" id="home">
-    </section>
-
-    <!--  -->
-    <section class="Books" id="notes">
-
-    </section>
-
-    <section class="why-us" id="why-us">
-
-    </section>
-
-    <section class="service" id="service">
-
-    </section>
-
-    <section class="contact" id="contact">
-
-    </section>
-
-    <footer>
+    <footer class="footer">
+        <p>&copy; 2024 Explorer. All Rights Reserved.</p>
     </footer>
-</body>
 
+    <script src="./js/script.js" defer></script>
+</body>
 </html>

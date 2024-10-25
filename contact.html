@@ -1,24 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software Company | Contact</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header class="navbar">
-        <a href="./index.html">Home</a>
-        <h1>Discuss Your Project</h1>
+        <a href="index.html" class="logo">
+            <img src="./images/explorer.png" alt="Explorer Logo">
+        </a>
+        <button class="nav-toggle" id="nav-toggle">&#9776;</button> <!-- Hamburger Icon -->
+        <nav class="nav-links" id="nav-links">
+            <a href="developers.html">Developers</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <section class="contact-form">
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Project Details" rows="5" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+    <main>
+        <h1>Get in Touch with Us</h1>
+
+        <section class="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Project Details" rows="5" required></textarea>
+                <button type="submit">Let's Get Started</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Our Location</h2>
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345091384!2d144.95373531531856!3d-37.81720997975107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0d3f5573%3A0xd95b5b7bb32a29e2!2sExplorer%20Office!5e0!3m2!1sen!2sau!4v1632166600123!5m2!1sen!2sau"
+                allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Explorer</h3>
+                <p>Explorer is your trusted partner for innovative software solutions. We help businesses transform
+                    ideas into success stories.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="developers.html">Developers</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@explorer.com">info@explorer.com</a></p>
+                <p>Phone: +1 123 456 7890</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    <a href="#"><i class="uil uil-twitter"></i></a>
+                    <a href="#"><i class="uil uil-linkedin"></i></a>
+                    <a href="#"><i class="uil uil-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-copyright">&copy; 2024 Explorer. All Rights Reserved.</p>
+    </footer>
 </body>
+
 </html>

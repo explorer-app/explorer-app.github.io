@@ -893,3 +893,90 @@ a:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Developer */
+/* Developer Cards Container */
+.developer-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  background-color: #f3f4f7;
+}
+
+/* Individual Developer Card */
+.developer-card {
+  position: relative;
+  width: 280px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.developer-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Developer Image */
+.developer-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Name, Position, and Experience */
+.developer-card h3 {
+  margin-top: 10px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.developer-card p {
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.experience {
+  color: #555;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* Social Icons Container */
+.social-icons {
+  position: absolute;
+  left: -50px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: left 0.3s;
+}
+
+.social-icons a {
+  color: #fff;
+  background-color: #0C4CA3;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #FF6B00;
+}
+
+/* On Hover Slide-in Effect */
+.developer-card:hover .social-icons {
+  left: 10px;
+}
